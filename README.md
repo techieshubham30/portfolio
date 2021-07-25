@@ -9,3 +9,7 @@ For now, I know:
 2. NodeJS
 3. Repl.it
 4. CHALK
+
+
+![portfolio](https://user-images.githubusercontent.com/82032825/126900607-2d990921-2d7b-42a4-8fc7-7001520c03a7.png)
+
