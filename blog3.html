@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-1</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        .blog-container{
+            width: 50vw;
+            height: 100%;
+            display:block;
+            margin: auto;
+        }
+        p{
+            line-height:1.7rem;
+            word-spacing: 0.4rem;
+            font-size: large;
+        }
+        img{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand">IamDeveloper</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">blogs</a>
+            </li>
+ 
+        </ul>
+    </nav>
+
+    <div class="blog-container">
+        <div class="blog-img">
+            <img src="images/blog1.png" alt="image">
+        </div>
+        <h1 class="blog-heading">Basics Of C++</h1>
+        <hr>
+        <span class="published-date">Published on July 28,2021</span>
+        <hr>
+        <p>Hello everyone in this article I will be talking about c++ basics which are mostly used in competitive programming which most beginners are not aware of, let me clarify before starting that I am not going to cover the whole basics of c++.</p>
+        <h2>Ranges and OverFlow :</h2>
+
+        <p>In CP while solving problems we estimate or assume a rough range of data types.<br> 
+            like for :</p>
+           <p>10^9 -> int -> 10^9</p>
+           <p>10^12->long int->10^12</p>
+           <p>10^18->long long int->10^18
+        </p>
+        <p>Now let's understand the overflow by an example:</p>
+        <img src="images/blog3-img1.png" alt="image">
+        <p>Did you try it? what did you get as output? 
+
+            see if you try this on any competitive programming contest then you will be getting overflow or wrong output.
+            
+            in the above example, the range of a is 10^5( not a problem because the range of int is around ~10^9, right?) and the same for b, but if we multiply a and b and stores in c then the range of a*b will be 10^10 but the data type of c is int and as you know the range of int can not be more than ~10^9, so this will give overflow as output.
+            
+            so, we will have to take data type of c as long or long long, right?
+            <br><br>
+            let's try this:</p>
+            <img src="images/blog3-img2.png" alt="image">
+            <p>you will be thinking now I took data type of c as long then why again I am getting wrong output, this is because I have told you earlier that calculation always occurs in higher data types, so a and b both have int as data type so the calculation will also occur in int.
+            <br><br>
+            Now what to do then? let's understand it finally:
+            <br><br>
+            <img src="images/blog3-img3.png" alt="image" style="width: 800px;">
+        </p>
+        <p>now you will not be getting any overflow or wrong output, because a and b both have long as data type so the calculation will also occur in long and the data type of c is also long so we can store it as well.
+        </p>
+        </div>
+
+    
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/techieshubham">linkedin</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/techieshubham30">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/shubhamsingh088">twitter</a>
+            </li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>
