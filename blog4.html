@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-4</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        .blog-container{
+            width: 50vw;
+            height: 100%;
+            display:block;
+            margin: auto;
+        }
+        p{
+            line-height:1.7rem;
+            word-spacing: 0.4rem;
+            font-size: large;
+        }
+        img{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand">IamDeveloper</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">blogs</a>
+            </li>
+ 
+        </ul>
+    </nav>
+
+    <div class="blog-container">
+        <div class="blog-img">
+            <img src="images/blog1.png" alt="image">
+        </div>
+        <h1 class="blog-heading">Time Complexity</h1>
+        <hr>
+        <span class="published-date">Published on July 28,2021</span>
+        <hr>
+        <p>Hello, everyone in this blog I will be talking about time complexity which is the important thing that you must know if you are planning to do competitive programming and not only for CP but also if you are preparing for interviews.</p>
+        <h3>Why you should know how to find the time complexity of any code? :</h3>
+        <p>see, in the world of competitive programming every second is important, suppose you have written the right logic of a code but it is taking more time to run, you must be knowing that how to reduce the time complexity of your code.
+        </p>
+
+        <p>Now let's understand Time complexity :</p>
+        <p>Before talking about how to find the time complexity of a code, let me clear you that we can not find the exact execution time of a code we can only estimate the rough figure. So, we have to estimate a rough figure,  how much time our code is taking to run.</p>
+        <h3>Iteration :</h3>
+        <p>Any statement written in code is called one iteration.<br>Let's understand this by an example :</p>
+        <img src="images/blog4-1st-img (2).png" alt="iamge">
+        <p>So, the total number of iteration in the above example is 3.
+            <br><br>
+
+           <p> <strong>Note 1:</strong>  for finding the time complexity of a code we have to estimate the total number of iterations that our code is having.<p></p>
+            
+          <P> <strong>Note 2:</strong> All the smaller iteration like 1,2,3,..etc these are called constant-time operations.</p>
+            
+            <p>In our above example, int y is a constant operation means it is taking one unit of time to execute, so if we calculate the total iteration of the above code that is 3 so we can say the time complexity of the above code is O(3), where O -> big O and 3-> no. of iterations.</p><br>
+            
+            <p>Now let's take another example :</p>
+            <img src="images/blog4-2st-img.png" alt="image">
+            <p>In this example, if we observe for loop is executing cout<<"Shubham" for n times so we have n iteration, right?So, the total iteration in the code will be O(5) + O(n), right?</p>
+
+            <p>what if we had three statement in for loop :
+            </p>
+            <p>for example :</p>
+            <img src="images/blog4-img3.png" alt="image">
+            <p>So, now for every n we have 3 iterations, the total iteration for the loop will be O(3n) and the total time complexity of the code will be O(5)+O(3n).
+
+                Note: whenever we are estimating time complexity we try to ignore the constant terms(only if it is not disturbing the order, suppose if the maximum value of n is given 10^5 then we can ignore 3 from 3*10^5 and we can also ignore adding 5 to 10^5 because this will not disturb the order).
+                So, now we can write the overall time complexity of the aboveg6 code is O(n).</p>
+
+               <p>few points to notice :</p>
+               <p>1. O(N) + O(N) =~ O(N) , if O(N) is not adding significantly. </p>
+               <p>2. O(K*N)=~ O(N), if K is very less than N.</p> 
+               <p>3. All constant time operations can be written as O(1), like O(3), O(4), etc.</p>
+
+               <p>Now let's understand how many iterations run in 1sec (it can vary in your systems, I am talking about with respect to other online platforms) <br><br>
+
+                Number of iterations in 1sec - 10^7 to 10^8(this should be your rough estimation while codding in any online platform).
+                <br><br>
+                
+                10^7 iterations will take 1sec
+                <br>
+                10^8 iterations will take 10sec
+                <br>
+                10^9 iterations will take 1000sec</p>
+        
+   </div>
+
+    
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/techieshubham">linkedin</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/techieshubham30">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/shubhamsingh088">twitter</a>
+            </li>
+        </ul>
+    </footer>
+
+
+</body>
+</html>
