@@ -75,6 +75,8 @@ hr{
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    font-size: larger;
+    font-style: italic;
 }
 
 .navigation .link{
@@ -140,6 +142,8 @@ hr{
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    font-size:larger;
+    font-style: italic;
 }
 
 .footer .link{
