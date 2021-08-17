@@ -97,9 +97,8 @@ hr{
 }
 
 @media only screen and (max-width:404px){
-    .navigation{
+    .navigation ul{
         display: flex;
-        flex-direction: initial;
         
     }
     .footer ul{
