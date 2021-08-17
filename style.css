@@ -96,6 +96,20 @@ hr{
     font-weight: bold;
 }
 
+@media only screen and (max-width:404px){
+    .navigation{
+        display: flex;
+        flex-direction: initial;
+        
+    }
+    .footer ul{
+        display: flex;
+        
+    }
+
+}
+
+
 .hero{
     padding: 2rem;
     padding-top: 5rem;
