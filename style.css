@@ -99,13 +99,18 @@ hr{
 @media only screen and (max-width:404px){
     .navigation ul{
         display: flex;
-        
     }
     .footer ul{
+        width:100%;
         display: flex;
-        
     }
-
+    .container{
+        width:100%;
+        padding-left: 0rem;
+        padding-right: 1.3rem;
+    }
+    
+    
 }
 
 
